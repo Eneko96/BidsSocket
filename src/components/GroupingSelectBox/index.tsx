@@ -19,7 +19,7 @@ export const GroupingSelectBox: FunctionComponent<GroupingSelectBoxProps> = ({ o
   return (
     <Container>
       <select data-testid="groupings" name="groupings" onChange={handleChange} defaultValue={groupingSize}>
-        {options.map((option, idx) => <option key={idx} value={option}>Group {option}</option>)}
+        {options?.map((option, idx) => <option key={idx} value={option}>Group {option}</option>)}
       </select>
 
     </Container>

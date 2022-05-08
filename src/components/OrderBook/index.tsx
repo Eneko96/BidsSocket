@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useEffect } from 'react';
-import useWebSocket from "react-use-websockets";
+import useWebSocket from "react-use-websocket";
 
 import TitleRow from "./TitleRow";
 import { Container, TableContainer } from "./styles";
@@ -34,6 +34,7 @@ interface Delta {
 
 let currentBids: number[][] = []
 let currentAsks: number[][] = []
+
 
 const OrderBook: FunctionComponent<OrderBookProps> = ({ windowWidth, productId, isFeedKilled }) => {
   const bids: number[][] = useAppSelector(selectBids);
